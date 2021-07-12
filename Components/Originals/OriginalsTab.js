@@ -1,4 +1,5 @@
 import React from 'react';
+import {Text, View} from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import NewToon from './NewToon';
 import MonToon from './MonToon';
@@ -43,9 +44,9 @@ const Stack = createStackNavigator();
 
 const OriginalsTab = () => {
   return (
-        <Stack.Navigator initialRouteName="MainTab">
-        <Stack.Screen name="Originals" component={Originals}  options={{headerShown: false}}></Stack.Screen>
-        </Stack.Navigator>
+          <Stack.Navigator initialRouteName="Originals">
+          <Stack.Screen name="Originals" component={Originals}  options={{headerShown: false}}></Stack.Screen>
+          </Stack.Navigator>
   );
 };
 

@@ -2,11 +2,10 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import { StyleSheet } from 'react-native';
 
-const CompleteToonTab = () => {
+const RecentToon = () => {
   return (
     <View style={styles.content}>
-      <Text style={{fontSize: 30}}>This is</Text>
-      <Text style={{fontSize: 30}}>CompleteToonTab</Text>
+      <Text style={{fontSize: 30}}>This is RecentToon</Text>
     </View>
   );
 };
@@ -19,4 +18,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CompleteToonTab;
+export default RecentToon;
